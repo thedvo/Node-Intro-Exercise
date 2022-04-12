@@ -33,9 +33,11 @@ function handleOutput(text, out) {
 				console.error(err);
 				process.exit(1);
 			}
+			console.log('Successfully wrote to file.');
 		});
+	} else {
+		console.log(text);
 	}
-	console.log(text);
 }
 
 function cat(path, out) {
